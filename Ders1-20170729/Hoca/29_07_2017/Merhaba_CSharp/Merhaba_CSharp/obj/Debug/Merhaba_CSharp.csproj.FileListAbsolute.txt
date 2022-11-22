@@ -1,0 +1,12 @@
+C:\MCSD\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\bin\Debug\Merhaba_CSharp.exe.config
+C:\MCSD\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\bin\Debug\Merhaba_CSharp.exe
+C:\MCSD\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\bin\Debug\Merhaba_CSharp.pdb
+C:\MCSD\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.csprojResolveAssemblyReference.cache
+C:\MCSD\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.exe
+C:\MCSD\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.pdb
+C:\Users\SerkanSanal7\Desktop\NetworkDersler\Ders1-20170729\Hoca\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\bin\Debug\Merhaba_CSharp.exe.config
+C:\Users\SerkanSanal7\Desktop\NetworkDersler\Ders1-20170729\Hoca\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.exe
+C:\Users\SerkanSanal7\Desktop\NetworkDersler\Ders1-20170729\Hoca\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.pdb
+C:\Users\Serkan\Desktop\course\Ders1-20170729\Hoca\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\bin\Debug\Merhaba_CSharp.exe.config
+C:\Users\Serkan\Desktop\course\Ders1-20170729\Hoca\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.exe
+C:\Users\Serkan\Desktop\course\Ders1-20170729\Hoca\29_07_2017\Merhaba_CSharp\Merhaba_CSharp\obj\Debug\Merhaba_CSharp.pdb
