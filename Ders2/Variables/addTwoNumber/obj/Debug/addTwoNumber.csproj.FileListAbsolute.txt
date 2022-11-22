@@ -1,0 +1,5 @@
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addTwoNumber\bin\Debug\addTwoNumber.exe.config
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addTwoNumber\bin\Debug\addTwoNumber.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addTwoNumber\bin\Debug\addTwoNumber.pdb
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addTwoNumber\obj\Debug\addTwoNumber.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addTwoNumber\obj\Debug\addTwoNumber.pdb

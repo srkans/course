@@ -1,0 +1,5 @@
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addNumbersLoop\bin\Debug\addNumbersLoop.exe.config
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addNumbersLoop\bin\Debug\addNumbersLoop.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addNumbersLoop\bin\Debug\addNumbersLoop.pdb
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addNumbersLoop\obj\Debug\addNumbersLoop.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\addNumbersLoop\obj\Debug\addNumbersLoop.pdb

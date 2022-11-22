@@ -1,0 +1,6 @@
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Variables\bin\Debug\Variables.exe.config
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Variables\bin\Debug\Variables.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Variables\bin\Debug\Variables.pdb
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Variables\obj\Debug\Variables.csprojResolveAssemblyReference.cache
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Variables\obj\Debug\Variables.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Variables\obj\Debug\Variables.pdb

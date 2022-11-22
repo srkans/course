@@ -1,0 +1,6 @@
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Circle\bin\Debug\Circle.exe.config
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Circle\bin\Debug\Circle.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Circle\bin\Debug\Circle.pdb
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Circle\obj\Debug\Circle.csprojResolveAssemblyReference.cache
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Circle\obj\Debug\Circle.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Circle\obj\Debug\Circle.pdb

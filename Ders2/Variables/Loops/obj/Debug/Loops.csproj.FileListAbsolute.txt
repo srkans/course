@@ -1,0 +1,5 @@
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Loops\bin\Debug\Loops.exe.config
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Loops\bin\Debug\Loops.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Loops\bin\Debug\Loops.pdb
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Loops\obj\Debug\Loops.exe
+C:\Users\Serkan\Desktop\course\Ders2\Variables\Loops\obj\Debug\Loops.pdb
