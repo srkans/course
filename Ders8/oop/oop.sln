@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance", "inheritance\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop3", "oop3\oop3.csproj", "{32868651-6573-4BA3-BBEA-590A4B16BAAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop4", "oop4\oop4.csproj", "{6AE7356C-611B-43EC-9A0E-BEC3A63F65D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{32868651-6573-4BA3-BBEA-590A4B16BAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32868651-6573-4BA3-BBEA-590A4B16BAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32868651-6573-4BA3-BBEA-590A4B16BAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE7356C-611B-43EC-9A0E-BEC3A63F65D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE7356C-611B-43EC-9A0E-BEC3A63F65D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE7356C-611B-43EC-9A0E-BEC3A63F65D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE7356C-611B-43EC-9A0E-BEC3A63F65D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
