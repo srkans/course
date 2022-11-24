@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classTypes", "classTypes\cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop2", "oop2\oop2.csproj", "{1C846A1A-D8A7-4207-B882-361EEC24A6FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "collections", "collections\collections.csproj", "{A300DFB3-05DC-45AE-ABF0-75CA4555B131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1C846A1A-D8A7-4207-B882-361EEC24A6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C846A1A-D8A7-4207-B882-361EEC24A6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C846A1A-D8A7-4207-B882-361EEC24A6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A300DFB3-05DC-45AE-ABF0-75CA4555B131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A300DFB3-05DC-45AE-ABF0-75CA4555B131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A300DFB3-05DC-45AE-ABF0-75CA4555B131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A300DFB3-05DC-45AE-ABF0-75CA4555B131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
