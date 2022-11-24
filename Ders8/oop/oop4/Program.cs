@@ -42,6 +42,7 @@ namespace oop4
             m.Write();
 
             //polymorphism
+            //baseclass'ta virtual olarak tanımlanan method'u türetilen sınıflarda override ettik
         }
     }
 }
