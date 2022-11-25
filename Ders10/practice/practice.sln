@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hashTable", "hashTable\hash
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sortedList", "sortedList\sortedList.csproj", "{1881F6A6-2B20-425E-92D8-B675000FF74A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop1", "oop1\oop1.csproj", "{E97010CD-7CBD-490A-B1FD-F5493FCD3AA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1881F6A6-2B20-425E-92D8-B675000FF74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1881F6A6-2B20-425E-92D8-B675000FF74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1881F6A6-2B20-425E-92D8-B675000FF74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97010CD-7CBD-490A-B1FD-F5493FCD3AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97010CD-7CBD-490A-B1FD-F5493FCD3AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97010CD-7CBD-490A-B1FD-F5493FCD3AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97010CD-7CBD-490A-B1FD-F5493FCD3AA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
