@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stackIntro", "stackIntro\st
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "queueIntrol", "queueIntrol\queueIntrol.csproj", "{28145E69-F764-4A1E-914B-65436D16D941}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hashTable", "hashTable\hashTable.csproj", "{EA26FDF4-E1E9-48AB-A684-9F087CBEE9C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{28145E69-F764-4A1E-914B-65436D16D941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28145E69-F764-4A1E-914B-65436D16D941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28145E69-F764-4A1E-914B-65436D16D941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA26FDF4-E1E9-48AB-A684-9F087CBEE9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA26FDF4-E1E9-48AB-A684-9F087CBEE9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA26FDF4-E1E9-48AB-A684-9F087CBEE9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA26FDF4-E1E9-48AB-A684-9F087CBEE9C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
