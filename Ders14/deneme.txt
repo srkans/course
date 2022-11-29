@@ -1,0 +1,11 @@
+Sayi : 0
+Sayi : 1
+Sayi : 2
+Sayi : 3
+Sayi : 4
+Sayi : 5
+Sayi : 6
+Sayi : 7
+Sayi : 8
+Sayi : 9
+Sayi : 10
