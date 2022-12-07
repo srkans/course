@@ -104,6 +104,7 @@
             this.btnReadfromXML.TabIndex = 7;
             this.btnReadfromXML.Text = "XML\'den Oku";
             this.btnReadfromXML.UseVisualStyleBackColor = true;
+            this.btnReadfromXML.Click += new System.EventHandler(this.btnReadfromXML_Click);
             // 
             // btnSavetoXML
             // 

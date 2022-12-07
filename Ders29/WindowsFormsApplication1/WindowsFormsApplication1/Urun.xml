@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Urunler>
+  <Urun UrunID="123">
+    <UrunAdi>Pantolon</UrunAdi>
+    <Renk>Siyah</Renk>
+    <Fiyat>40</Fiyat>
+    <Marka>abc</Marka>
+  </Urun>
+  <Urun UrunID="124">
+    <UrunAdi>Gömlek</UrunAdi>
+    <Renk>Sarı</Renk>
+    <Fiyat>39</Fiyat>
+    <Marka>ahc</Marka>
+  </Urun>
+  <Urun UrunID="125">
+    <UrunAdi>Kazak</UrunAdi>
+    <Renk>Gri</Renk>
+    <Fiyat>29.90</Fiyat>
+    <Marka>abasd</Marka>
+  </Urun>
+  <Urun UrunID="244">
+    <UrunAdi>Yelek</UrunAdi>
+    <Renk>Kırmızı</Renk>
+    <Fiyat>24</Fiyat>
+    <Marka>fsdf</Marka>
+  </Urun>
+
+</Urunler>

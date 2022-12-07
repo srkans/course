@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace WindowsFormsApplication1
 {
@@ -20,6 +21,8 @@ namespace WindowsFormsApplication1
 
         private void btnMARS_Click(object sender, EventArgs e)
         {
+            treeView1.Nodes.Clear();
+
             string strConn = "data source=.;initial catalog=AdventureWorks2016CTP3;integrated security=true;MultipleActiveResultSets=true;";
 
             //aynı anda birden fazla bağlantı kullanılacaksa multiple...
@@ -50,15 +53,43 @@ namespace WindowsFormsApplication1
                {
                     node.Nodes.Add(dr2[2].ToString());
               }
-               if(treeView1.Nodes.Count <4)
-                {
+               
+                
                     treeView1.Nodes.Add(node);
-                }
+                
 
                 
             }
 
             conn.Close();
+        }
+
+        private void btnReadfromXML_Click(object sender, EventArgs e)
+        {
+            treeView1.Nodes.Clear();
+
+            XmlDocument xdoc = new XmlDocument();
+
+            xdoc.Load("../../Urun.xml"); //2 level up from debug folder
+
+            treeView1.Nodes.Add(xdoc.DocumentElement.Name);
+
+            foreach(XmlNode node in xdoc.DocumentElement)
+            {
+                TreeNode urun = new TreeNode();
+
+                urun.Text = node.Attributes["UrunID"].Value;
+
+                foreach (XmlNode detay in node.ChildNodes)
+                {
+
+                    urun.Nodes.Add(detay.Name + ": " + detay.InnerText);
+
+                }
+
+                treeView1.Nodes[0].Nodes.Add(urun);
+            }           
+            
         }
     }
 }
