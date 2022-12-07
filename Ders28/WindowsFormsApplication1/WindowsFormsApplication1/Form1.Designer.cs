@@ -31,6 +31,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnXML = new System.Windows.Forms.Button();
+            this.btnDataSet = new System.Windows.Forms.Button();
+            this.btnConBuilder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(12, 45);
+            this.btnSelect.Location = new System.Drawing.Point(50, 45);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(75, 23);
             this.btnSelect.TabIndex = 1;
@@ -54,7 +56,7 @@
             // 
             // btnXML
             // 
-            this.btnXML.Location = new System.Drawing.Point(148, 45);
+            this.btnXML.Location = new System.Drawing.Point(191, 45);
             this.btnXML.Name = "btnXML";
             this.btnXML.Size = new System.Drawing.Size(75, 23);
             this.btnXML.TabIndex = 2;
@@ -62,11 +64,33 @@
             this.btnXML.UseVisualStyleBackColor = true;
             this.btnXML.Click += new System.EventHandler(this.btnXML_Click);
             // 
+            // btnDataSet
+            // 
+            this.btnDataSet.Location = new System.Drawing.Point(343, 45);
+            this.btnDataSet.Name = "btnDataSet";
+            this.btnDataSet.Size = new System.Drawing.Size(75, 23);
+            this.btnDataSet.TabIndex = 3;
+            this.btnDataSet.Text = "DATA SET";
+            this.btnDataSet.UseVisualStyleBackColor = true;
+            this.btnDataSet.Click += new System.EventHandler(this.btnDataSet_Click);
+            // 
+            // btnConBuilder
+            // 
+            this.btnConBuilder.Location = new System.Drawing.Point(50, 334);
+            this.btnConBuilder.Name = "btnConBuilder";
+            this.btnConBuilder.Size = new System.Drawing.Size(110, 23);
+            this.btnConBuilder.TabIndex = 4;
+            this.btnConBuilder.Text = "ConnectionBuilder";
+            this.btnConBuilder.UseVisualStyleBackColor = true;
+            this.btnConBuilder.Click += new System.EventHandler(this.btnConBuilder_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 408);
+            this.Controls.Add(this.btnConBuilder);
+            this.Controls.Add(this.btnDataSet);
             this.Controls.Add(this.btnXML);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dataGridView1);
@@ -82,6 +106,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnXML;
+        private System.Windows.Forms.Button btnDataSet;
+        private System.Windows.Forms.Button btnConBuilder;
     }
 }
 

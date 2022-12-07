@@ -65,5 +65,29 @@ namespace WindowsFormsApplication1
 
             dt.WriteXml("data.xml");  
         }
+
+        private void btnDataSet_Click(object sender, EventArgs e)
+        {
+            string strConn = "Data Source = SERKAN; Initial Catalog = Calisma; Integrated Security = True";
+
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Kitaplar ; SELECT * FROM Yazarlar", strConn);
+
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            dataGridView1.DataSource = ds.Tables[0]; //Tables-->Kitaplar ve Yazarlar
+        }
+
+        private void btnConBuilder_Click(object sender, EventArgs e)
+        {
+            SqlConnectionStringBuilder csb = new SqlConnectionStringBuilder();
+
+            csb.DataSource = "SERKAN";
+            csb.InitialCatalog = "Calisma";
+            csb.IntegratedSecurity = true;
+
+            MessageBox.Show(csb.ToString());
+        }
     }
 }
