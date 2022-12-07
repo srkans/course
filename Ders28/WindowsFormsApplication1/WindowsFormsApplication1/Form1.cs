@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,6 +15,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -88,6 +90,80 @@ namespace WindowsFormsApplication1
             csb.IntegratedSecurity = true;
 
             MessageBox.Show(csb.ToString());
+
+
+        }
+
+        private void btnAppConfig_Click(object sender, EventArgs e)
+        {
+            // SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["StrConnCalisma"].ConnectionString);
+
+            SqlConnection conn = new SqlConnection("Data Source = SERKAN; Initial Catalog = Calisma; Integrated Security = True");
+
+            conn.Open();
+
+            MessageBox.Show(conn.State.ToString());
+
+            conn.Close();  
+                
+        }
+
+        private void btnMultiQuery_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source = SERKAN; Initial Catalog = Calisma; Integrated Security = True");
+
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("select*from Kitaplar;select * from Yazarlar", conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            int index = 2;
+
+            do
+            {
+                while (dr.Read())
+                {
+                    MessageBox.Show(dr[index].ToString());
+                }
+
+                index = 1;
+            } while (dr.NextResult());
+
+
+            //bağlantılı yöntemde birden fazla sorguyu çalıştırmak için next result kullanılıyor.
+
+            conn.Close();
+
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source = SERKAN; Initial Catalog = Calisma; Integrated Security = True");
+
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("select KitapID,KitapAdi,isNull(Fiyat,'0.0') as Fiyat from Kitaplar", conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            List<Kitap> kitaplar = new List<Kitap>();
+
+            while (dr.Read())
+            {
+                Kitap ktp = new Kitap();
+
+                ktp.KitapID = Convert.ToInt32(dr[0]);
+                ktp.KitapAdi = dr[1].ToString();
+                ktp.Fiyat = Convert.ToDouble(dr[2]);
+
+                kitaplar.Add(ktp);
+            }
+
+            dataGridView1.DataSource = kitaplar;
+
+
+            conn.Close();
         }
     }
 }
