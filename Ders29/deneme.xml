@@ -1,0 +1,17 @@
+<Urunler>
+ <Urun UrunID ="123">
+ <UrunAdi>Elma</UrunAdi>
+ <Fiyat>3,45</Fiyat>
+</Urun>
+
+<Urun UrunID="234">
+ <UrunAdi>Armut</UrunAdi>
+ <Fiyat>4,44</Fiyat>
+</Urun>
+
+<Urun UrunID="345">
+<UrunAdi>Portakal</UrunAdi>
+<Fiyat>2,35</Fiyat>
+</Urun>
+
+</Urunler>
