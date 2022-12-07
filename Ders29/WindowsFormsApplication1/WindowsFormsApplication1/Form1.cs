@@ -88,8 +88,40 @@ namespace WindowsFormsApplication1
                 }
 
                 treeView1.Nodes[0].Nodes.Add(urun);
+                
             }           
             
+        }
+
+        private void btnSavetoXML_Click(object sender, EventArgs e)
+        {
+            XmlDocument xdoc = new XmlDocument();
+
+            xdoc.Load("../../Urun.xml");
+
+            XmlNode urun = xdoc.CreateElement("Urun");
+
+            XmlAttribute ID = xdoc.CreateAttribute("UrunID");
+            XmlElement ad = xdoc.CreateElement("UrunAdi");
+            XmlElement renk = xdoc.CreateElement("Renk");
+            XmlElement fiyat = xdoc.CreateElement("Fiyat");
+            XmlElement marka = xdoc.CreateElement("Marka");
+
+            ID.Value = txtID.Text;
+            ad.InnerText = txtName.Text;
+            renk.InnerText = txtColor.Text;
+            fiyat.InnerText = txtPrice.Text;
+            marka.InnerText = txtBrand.Text;
+
+            urun.Attributes.Append(ID);
+            urun.AppendChild(ad);
+            urun.AppendChild(renk);
+            urun.AppendChild(fiyat);
+            urun.AppendChild(marka);
+
+            xdoc.DocumentElement.AppendChild(urun);
+
+            xdoc.Save("../../Urun.xml");
         }
     }
 }

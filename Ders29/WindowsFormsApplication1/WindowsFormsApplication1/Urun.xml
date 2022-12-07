@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Urunler>
   <Urun UrunID="123">
     <UrunAdi>Pantolon</UrunAdi>
@@ -24,5 +24,10 @@
     <Fiyat>24</Fiyat>
     <Marka>fsdf</Marka>
   </Urun>
-
+  <Urun UrunID="126">
+    <UrunAdi>Klavye</UrunAdi>
+    <Renk>Siyah</Renk>
+    <Fiyat>233</Fiyat>
+    <Marka>sdşgl</Marka>
+  </Urun>
 </Urunler>

@@ -114,6 +114,7 @@
             this.btnSavetoXML.TabIndex = 8;
             this.btnSavetoXML.Text = "XML\'e Kaydet";
             this.btnSavetoXML.UseVisualStyleBackColor = true;
+            this.btnSavetoXML.Click += new System.EventHandler(this.btnSavetoXML_Click);
             // 
             // label1
             // 
