@@ -52,5 +52,18 @@ namespace WindowsFormsApplication1
 
             da.Update(dt);
         }
+
+        private void btnXML_Click(object sender, EventArgs e)
+        {
+            string strConn = "Data Source = SERKAN; Initial Catalog = Calisma; Integrated Security = True";
+
+            SqlDataAdapter da = new SqlDataAdapter("Select * from Kitaplar", strConn);
+
+            DataTable dt = new DataTable("Kitap"); //verileri xml dosyasına yazarken isim vermek gerekiyor.
+
+            da.Fill(dt);
+
+            dt.WriteXml("data.xml");  
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSelect = new System.Windows.Forms.Button();
+            this.btnXML = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,7 +39,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(50, 74);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(252, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(368, 242);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnSelect
@@ -51,11 +52,22 @@
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
+            // btnXML
+            // 
+            this.btnXML.Location = new System.Drawing.Point(148, 45);
+            this.btnXML.Name = "btnXML";
+            this.btnXML.Size = new System.Drawing.Size(75, 23);
+            this.btnXML.TabIndex = 2;
+            this.btnXML.Text = "XML";
+            this.btnXML.UseVisualStyleBackColor = true;
+            this.btnXML.Click += new System.EventHandler(this.btnXML_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 408);
+            this.Controls.Add(this.btnXML);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.Button btnXML;
     }
 }
 
