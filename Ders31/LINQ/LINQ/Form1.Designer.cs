@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnLambda = new System.Windows.Forms.Button();
             this.btnExtension = new System.Windows.Forms.Button();
             this.btnAnonymous = new System.Windows.Forms.Button();
             this.btnColInı = new System.Windows.Forms.Button();
@@ -46,14 +46,15 @@
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 15;
             // 
-            // button7
+            // btnLambda
             // 
-            this.button7.Location = new System.Drawing.Point(326, 129);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(116, 41);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Lambda Expression";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnLambda.Location = new System.Drawing.Point(326, 129);
+            this.btnLambda.Name = "btnLambda";
+            this.btnLambda.Size = new System.Drawing.Size(116, 41);
+            this.btnLambda.TabIndex = 14;
+            this.btnLambda.Text = "Lambda Expression";
+            this.btnLambda.UseVisualStyleBackColor = true;
+            this.btnLambda.Click += new System.EventHandler(this.btnLambda_Click);
             // 
             // btnExtension
             // 
@@ -120,7 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 358);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnLambda);
             this.Controls.Add(this.btnExtension);
             this.Controls.Add(this.btnAnonymous);
             this.Controls.Add(this.btnColInı);
@@ -136,7 +137,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnLambda;
         private System.Windows.Forms.Button btnExtension;
         private System.Windows.Forms.Button btnAnonymous;
         private System.Windows.Forms.Button btnColInı;

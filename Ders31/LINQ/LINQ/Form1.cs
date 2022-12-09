@@ -71,5 +71,46 @@ namespace LINQ
             MessageBox.Show(mesaj.TersCevir());
 
         }
+
+        public bool TekSayiMi(int sayi)
+        {
+            return sayi % 2 == 1 ? true : false;
+        }
+
+        private void btnLambda_Click(object sender, EventArgs e)
+        {
+            List<int> sayilar = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 33, 44, 55, 66, 88, 77, 55, 21 };
+            listBox1.Items.Clear();
+
+            //1.yöntem
+
+            //for (int i = 0; i<sayilar.Count;i++)
+            //{
+            //    listBox1.Items.Add(sayilar[i]);
+            //}
+
+            //2.Yontem predicate delegate 
+
+            //foreach(var s in sayilar.FindAll(TekSayiMi))
+            //{
+            //    listBox1.Items.Add(s);
+            //}
+
+            //3.Yontem Metod içine method yazarak
+
+            foreach (var s in sayilar.FindAll(delegate (int sayi) { return sayi % 2 == 1 ? true : false; }))
+            {
+                listBox1.Items.Add(s);
+            }
+
+            //4.Yontem Lambda Expression
+
+            foreach (var s in sayilar.FindAll(s => s % 2 == 1 ? true : false))
+            {
+                listBox1.Items.Add(s);
+            }
+
+            //her lambda expression bir delegedir.
+        }
     }
 }
