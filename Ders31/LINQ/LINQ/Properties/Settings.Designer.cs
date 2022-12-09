@@ -32,5 +32,15 @@ namespace LINQ.Properties {
                 return ((string)(this["CalismaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Calismaa;Integrated Security=True")]
+        public string CalismaaConnectionString {
+            get {
+                return ((string)(this["CalismaaConnectionString"]));
+            }
+        }
     }
 }

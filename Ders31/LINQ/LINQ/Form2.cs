@@ -75,5 +75,34 @@ namespace LINQ
 
             dataGridView1.DataSource = sonuc.ToList();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DataClasses2DataContext db = new DataClasses2DataContext();
+
+            if(!db.DatabaseExists())
+            {
+                db.CreateDatabase();
+            }
+
+            db.Albums.InsertOnSubmit(new Album() { AlbumID = 116, AlbumAdi = "Denemeler", Sanatci = "Mogollar", Tur = "Rock", Fiyat = 12 });
+
+            db.SubmitChanges();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DataClasses1DataContext db = new DataClasses1DataContext();
+
+            //var sonuc = from u in db.AdvUrunlers
+            //            group u by u.Renk into grp
+            //            select grp;
+
+            var sonuc = db.AdvUrunlers.GroupBy(u => u.Renk);
+
+            //lambda expression kullanmayı tercih et.
+
+            dataGridView1.DataSource = sonuc.ToList();
+        }
     }
 }
