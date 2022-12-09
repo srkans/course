@@ -30,8 +30,8 @@
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnExtension = new System.Windows.Forms.Button();
+            this.btnAnonymous = new System.Windows.Forms.Button();
             this.btnColInı = new System.Windows.Forms.Button();
             this.btnObjInit = new System.Windows.Forms.Button();
             this.btnAutoProp = new System.Windows.Forms.Button();
@@ -55,23 +55,25 @@
             this.button7.Text = "Lambda Expression";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnExtension
             // 
-            this.button6.Location = new System.Drawing.Point(326, 54);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(116, 43);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Extension Methods";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnExtension.Location = new System.Drawing.Point(326, 54);
+            this.btnExtension.Name = "btnExtension";
+            this.btnExtension.Size = new System.Drawing.Size(116, 43);
+            this.btnExtension.TabIndex = 13;
+            this.btnExtension.Text = "Extension Methods";
+            this.btnExtension.UseVisualStyleBackColor = true;
+            this.btnExtension.Click += new System.EventHandler(this.btnExtension_Click);
             // 
-            // button5
+            // btnAnonymous
             // 
-            this.button5.Location = new System.Drawing.Point(83, 271);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 47);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Anonymous Types";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAnonymous.Location = new System.Drawing.Point(83, 271);
+            this.btnAnonymous.Name = "btnAnonymous";
+            this.btnAnonymous.Size = new System.Drawing.Size(117, 47);
+            this.btnAnonymous.TabIndex = 12;
+            this.btnAnonymous.Text = "Anonymous Types";
+            this.btnAnonymous.UseVisualStyleBackColor = true;
+            this.btnAnonymous.Click += new System.EventHandler(this.btnAnonymous_Click);
             // 
             // btnColInı
             // 
@@ -119,8 +121,8 @@
             this.ClientSize = new System.Drawing.Size(529, 358);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnExtension);
+            this.Controls.Add(this.btnAnonymous);
             this.Controls.Add(this.btnColInı);
             this.Controls.Add(this.btnObjInit);
             this.Controls.Add(this.btnAutoProp);
@@ -135,8 +137,8 @@
 
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnExtension;
+        private System.Windows.Forms.Button btnAnonymous;
         private System.Windows.Forms.Button btnColInı;
         private System.Windows.Forms.Button btnObjInit;
         private System.Windows.Forms.Button btnAutoProp;

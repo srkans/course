@@ -47,5 +47,29 @@ namespace LINQ
         {
             List<string> names = new List<string>() { "ali", "veli", "ahmet", "mehmet" }; //collection initializer
         }
+
+        private void btnAnonymous_Click(object sender, EventArgs e)
+        {
+            var Musteri = new { MusID = 123, MusAdi = "Ahmet", Adres = "Kadıköy" };
+            //anonymous type geçici bir class'a benziyor
+
+            MessageBox.Show(Musteri.MusAdi);
+            //bu sayede ayrı olarak bir class oluşturulmadan burada musteri nesnesi olusturuldu.
+        }
+
+        private void btnExtension_Click(object sender, EventArgs e)
+        {
+            int sayi = 12;
+            string mesaj = "Deneme";
+
+            //extension method ile var olan sınıflara yapıyı bozmadan yeni metodlar eklenebiliyor.
+
+            //1-extension için yazılan class static olmak zorunda.
+
+            MessageBox.Show(sayi.KareAl().Bol(2).Carp(3).ToString()); //expression tree, özellikle extension metodlar bu şekilde peş peşe kullanılabiliyorlar. 
+
+            MessageBox.Show(mesaj.TersCevir());
+
+        }
     }
 }
