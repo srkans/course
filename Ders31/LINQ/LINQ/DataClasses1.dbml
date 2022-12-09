@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Calisma" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SERKAN;Initial Catalog=Calisma;Integrated Security=True" SettingsObjectName="LINQ.Properties.Settings" SettingsPropertyName="CalismaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AdvUrunler" Member="AdvUrunlers">
+    <Type Name="AdvUrunler">
+      <Column Name="ÜrünID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ÜrünKodu" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Renk" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="BirimFiyat" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="ÜrünAdi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

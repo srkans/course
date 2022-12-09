@@ -60,5 +60,20 @@ namespace LINQ
 
             dataGridView1.DataSource = sonuc.ToList();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DataClasses1DataContext db = new DataClasses1DataContext();
+
+            //dataGridView1.DataSource = db.AdvUrunlers.ToList();
+
+            // var sonuc = db.AdvUrunlers.Where(u => u.BirimFiyat > 500).OrderByDescending(u => u.BirimFiyat);
+
+            var sonuc = from u in db.AdvUrunlers
+                        where u.Renk == "Black"
+                        select new { u.ÜrünID, u.ÜrünAdi, u.Renk };
+
+            dataGridView1.DataSource = sonuc.ToList();
+        }
     }
 }
