@@ -31,5 +31,21 @@ namespace LINQ
             deneme = "Merhaba Dünya "; //dynamic runtime da farklı tipler alabiliyor.
 
         }
+
+        private void btnObjInit_Click(object sender, EventArgs e)
+        {
+            Personel p = new Personel();
+
+            p.PerID = 123;
+            p.PerAd = "Serkan";
+            p.Maas = 123.45;
+
+            Personel oi = new Personel() { PerID = 124, PerAd = "Betul", Maas = 234.56 }; //object initializer c#4.0
+        }
+
+        private void btnColInı_Click(object sender, EventArgs e)
+        {
+            List<string> names = new List<string>() { "ali", "veli", "ahmet", "mehmet" }; //collection initializer
+        }
     }
 }

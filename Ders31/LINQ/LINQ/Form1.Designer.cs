@@ -32,9 +32,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnColInı = new System.Windows.Forms.Button();
+            this.btnObjInit = new System.Windows.Forms.Button();
+            this.btnAutoProp = new System.Windows.Forms.Button();
             this.btnVar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -73,32 +73,34 @@
             this.button5.Text = "Anonymous Types";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnColInı
             // 
-            this.button4.Location = new System.Drawing.Point(89, 200);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 40);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Collection Initializer";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnColInı.Location = new System.Drawing.Point(89, 200);
+            this.btnColInı.Name = "btnColInı";
+            this.btnColInı.Size = new System.Drawing.Size(106, 40);
+            this.btnColInı.TabIndex = 11;
+            this.btnColInı.Text = "Collection Initializer";
+            this.btnColInı.UseVisualStyleBackColor = true;
+            this.btnColInı.Click += new System.EventHandler(this.btnColInı_Click);
             // 
-            // button3
+            // btnObjInit
             // 
-            this.button3.Location = new System.Drawing.Point(99, 146);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 36);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Object Initializer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnObjInit.Location = new System.Drawing.Point(99, 146);
+            this.btnObjInit.Name = "btnObjInit";
+            this.btnObjInit.Size = new System.Drawing.Size(93, 36);
+            this.btnObjInit.TabIndex = 10;
+            this.btnObjInit.Text = "Object Initializer";
+            this.btnObjInit.UseVisualStyleBackColor = true;
+            this.btnObjInit.Click += new System.EventHandler(this.btnObjInit_Click);
             // 
-            // button2
+            // btnAutoProp
             // 
-            this.button2.Location = new System.Drawing.Point(99, 89);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 33);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Auto Property";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAutoProp.Location = new System.Drawing.Point(99, 89);
+            this.btnAutoProp.Name = "btnAutoProp";
+            this.btnAutoProp.Size = new System.Drawing.Size(87, 33);
+            this.btnAutoProp.TabIndex = 9;
+            this.btnAutoProp.Text = "Auto Property";
+            this.btnAutoProp.UseVisualStyleBackColor = true;
             // 
             // btnVar
             // 
@@ -119,9 +121,9 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnColInı);
+            this.Controls.Add(this.btnObjInit);
+            this.Controls.Add(this.btnAutoProp);
             this.Controls.Add(this.btnVar);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -135,9 +137,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnColInı;
+        private System.Windows.Forms.Button btnObjInit;
+        private System.Windows.Forms.Button btnAutoProp;
         private System.Windows.Forms.Button btnVar;
     }
 }
