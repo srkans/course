@@ -10,7 +10,7 @@ using System.Web;
 /// </summary>
 public class Uyelik
 {
-    string strConn = @"Data Source=SERKAN;Initial Catalog=Calisma;Integrated Security=True";
+    string strConn = "Data Source=SERKAN;Initial Catalog=Calisma;Integrated Security=True";
 
     SqlConnection conn;
     public Uyelik()
@@ -71,13 +71,14 @@ public class Uyelik
 
     public void uyeEkle(string ad, string kullanici, string sifre)
     {
-        SqlCommand cmd = new SqlCommand("insert into Uyeler values(@ad,kullanici,@sifre)", conn);
+        SqlCommand cmd = new SqlCommand("insert into Uyeler values(@UyeTipID,@UyeAdi,@Kullanici,@Sifre)", conn);
 
         cmd.Parameters.Clear();
 
-        cmd.Parameters.AddWithValue("@ad", ad);
-        cmd.Parameters.AddWithValue("@kullanici", kullanici);
-        cmd.Parameters.AddWithValue("@sifre", MdBes(sifre));
+        cmd.Parameters.AddWithValue("@UyeTipID", 1);
+        cmd.Parameters.AddWithValue("@UyeAdi", ad);
+        cmd.Parameters.AddWithValue("@Kullanici", kullanici);
+        cmd.Parameters.AddWithValue("@Sifre", MdBes(sifre)); //kriptolu eklendi
 
         conn.Open();
 
