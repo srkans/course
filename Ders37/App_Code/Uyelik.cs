@@ -68,4 +68,21 @@ public class Uyelik
 
         return uyeID;
     }
+
+    public void uyeEkle(string ad, string kullanici, string sifre)
+    {
+        SqlCommand cmd = new SqlCommand("insert into Uyeler values(@ad,kullanici,@sifre)", conn);
+
+        cmd.Parameters.Clear();
+
+        cmd.Parameters.AddWithValue("@ad", ad);
+        cmd.Parameters.AddWithValue("@kullanici", kullanici);
+        cmd.Parameters.AddWithValue("@sifre", MdBes(sifre));
+
+        conn.Open();
+
+        cmd.ExecuteNonQuery();
+
+        conn.Close();
+    }
 }
