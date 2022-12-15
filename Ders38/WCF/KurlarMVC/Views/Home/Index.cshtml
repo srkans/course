@@ -1,0 +1,34 @@
+﻿@model List<string>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("KurGetir", "Home", FormMethod.Post, null)) { 
+    <div>
+        <label>Para birimi seçiniz : </label>
+    </div>
+    <div>
+        <select name="ParaBirimi">
+            @foreach(string paraBirim in Model)
+            {
+                <option>@paraBirim</option>
+            }
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Kurları Getir"/>
+    </div>
+    <div>
+        @Html.Partial("KurlarListesi", (List<double>)ViewBag.Kurlar);
+    </div>
+    }
+</body>
+</html>
