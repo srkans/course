@@ -1,0 +1,66 @@
+﻿@model  indexModel
+@using mvcNews.Models <!--**-->
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @using (Html.BeginForm("HaberleriListele", "Home", FormMethod.Post, new { @class="form-horizontal", role = "form" }))
+    {
+   <div class="container">
+        <div class="jumbotron">
+            <h1>Haber Listesi</h1>
+            <p>Seçtiğiniz kategorideki haberler listelenir.</p>
+        </div>
+       
+           <div class="col-sm-3">
+               <div>
+                   <label class="control-label">Kategori Seçiniz:</label>
+               </div>
+               <div class="col-sm-10">
+                   <div class="form-group row">
+                       <select name="SecilenKategori" class="form-control">
+                           @foreach (Kategori kategori in Model.Kategoriler)
+                           {
+                               <option>@kategori.kategoriAdi</option>
+                           }
+                       </select>
+                   </div>
+
+           </div>
+
+           <div class="col-sm-offset-2">
+               <input type="submit" value="Haberleri Listele" class="btn-success" />
+           </div>
+           <div>
+               <table class="table">
+                   <thead>
+                       <tr>
+                           <th>Haber Başlığı</th>
+                           <th>Yorum Sayısı</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       @foreach(Haber _haber in Model.Haberler)
+                       {
+                           <tr>
+                               <td><a href="/Home/HaberDetay?haberID=@_haber.Id">@_haber.Baslik</a></td>
+                               <td>@_haber.Yorumlar.Count()</td>
+                           </tr>
+                       }
+                   </tbody>
+               </table>
+           </div>
+       </div>
+   </div>
+    } 
+</body>
+</html>
